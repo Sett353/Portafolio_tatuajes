@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gato Tatto Studio</title>
+    <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>GATO TATTO STUDIO</h1>
+    </header>
+    <nav>
+        <img src="./img/logo.jpg" alt="Logo">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#sobremi">Sobre mi</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#reserva">Reserva</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sobremi">
+            <div class="contenedor">
+
+                <h1>Sobre mi</h1>
+                <hr>
+                <figure class="tatuador">
+                    <img src="./img/tatuador_1.jpg" alt="Foto del tatuador">
+                </figure>
+                <h1>Alejandro Restrepo</h1>
+                <h2>Artista del Tatuaje</h2>
+                <p>Tatuador especializado en sombras y black and grey. Con 10 años de experiencia. Creando arte corporal único que cuenta tu historia. Cada diseño es una obra maestra personalizada.</p>
+                </div>
+        </section>
+        <section id="galeria">
+            <div class="contenedor">
+                <h1>Galeria</h1>
+                <p>Explora mi colección de trabajos realizados</p>
+                <div class="carrusel">
+                    <img src="./img/1.jpg" alt="">
+                    <img src="./img/2.jpg" alt="">
+                    <img src="./img/3.jpg" alt="">
+                    <img src="./img/4.jpg" alt="">
+                    <img src="./img/5.jpg" alt="">
+                    <img src="./img/6.jpg" alt="">
+                    <details>
+                        <summary>Ver más diseños</summary>
+                        <img src="./img/7.jpg" alt="">
+                        <img src="./img/8.jpg" alt="">
+                        <img src="./img/9.jpg" alt="">
+                        <img src="./img/10.jpg" alt="">
+                        <img src="./img/11.jpg" alt="">
+                        <img src="./img/12.jpg" alt="">
+                        <img src="./img/13.jpg" alt="">
+                        <img src="./img/14.jpg" alt="">
+                        <img src="./img/15.jpg" alt="">
+                        <img src="./img/16.jpg" alt="">
+                        <img src="./img/17.jpg" alt="">
+                        <img src="./img/18.jpg" alt="">
+                        <img src="./img/19.jpg" alt="">
+                        <img src="./img/20.jpg" alt="">
+                        <img src="./img/21.jpg" alt="">
+                        <img src="./img/22.jpg" alt="">
+                        <img src="./img/23.jpg" alt="">
+                        <img src="./img/24.jpg" alt="">
+                        <img src="./img/25.jpg" alt="">
+                        <img src="./img/26.jpg" alt="">
+                        <img src="./img/27.jpg" alt="">
+                        <img src="./img/28.jpg" alt="">
+                        <img src="./img/29.jpg" alt="">
+                        <img src="./img/30.jpg" alt="">
+                        <img src="./img/31.jpg" alt="">
+                        <img src="./img/32.jpg" alt="">
+                        <img src="./img/33.jpg" alt="">     
+                    </details>
+                </div>
+            </div>
+        </section>
+        <section id="reserva">
+            <div class="contenedor">
+                <h1>Reserva tu cita</h1>
+                <p>Agenda tu sesión de tatuaje con Alejandro Restrepo. Completa el formulario a continuación para reservar tu cita personalizada. ¡Estamos emocionados de crear arte corporal único contigo!</p>
+                <form id="reservaForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        <label for="telefono">Teléfono</label>  
+                        <input type="tel" id="telefono" name="telefono" required placeholder="+57 300 123 4567">
+                        <label for="fecha">Fecha de la cita</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                        <label for="hora">Hora de la cita</label>
+                        <input type="time" id="hora" name="hora" required>
+                        <label for="descripcion">Descripción del tatuaje</label>
+                        <textarea id="descripcion" name="descripcion" required placeholder="Describe el diseño que deseas"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Reservar cita</button>
+                </form>
+        </section>
+        <section id="contacto">
+        <div class="contenedor">
+          <h1 class="section-title">Contacto</h1>
+          <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>¿Tienes alguna pregunta o quieres discutir tu próximo tatuaje? No dudes en contactarme.</p>
+                    <p><strong>Teléfono:</strong> +57 302 324 7890</p>
+                    <p><strong>Email:</strong> info@tatuajes.com</p>
+                    <p><strong>Ubicación:</strong> Medellín, Colombia</p>
+                    <details>
+                        <summary>QR Instagram</summary>
+                        <img class="insta" src="./img/QR insta.jpg" alt="QR">
+                    </details>
+                </div>
+
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                    placeholder="Tu nombre completo"
+                  />
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="tu@email.com"
+                  />
+                  <label for="asunto">Asunto</label>
+                  <input
+                    type="text"
+                    id="asunto"
+                    name="asunto"
+                    required
+                    placeholder="El asunto de tu mensaje"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    required
+                    placeholder="Escribe tu mensaje aquí..."
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-submit">
+                  Enviar Mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+<footer class="footer">
+<div class="contenedor footer-grid">
+
+    <div class="footer-brand">
+      <h2>GATO TATTO STUDIO</h2>
+      <p>Arte corporal exclusivo en Medellín. Diseños personalizados que trascienden la piel.</p>
+    </div>
+    <div class="footer-nav">
+      <h3>Navegación</h3>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#sobremi">Sobre mí</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#reserva">Reservas</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h3>Contacto</h3>
+      <p>Medellín, Colombia</p>
+      <p>+57 302 324 7890</p>
+      <p>info@tatuajes.com</p>
+    </div>
+    <div class="footer-social">
+      <h3>Sígueme</h3>
+      <div class="social-icons">
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-line"></div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Gato Tatto Studio — Todos los derechos reservados</p>
+  </div>
+</footer>
+</body>
+</html>
