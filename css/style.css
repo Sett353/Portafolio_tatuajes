@@ -3,107 +3,109 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
+main {
+    margin-left: 220px;
+}
+header {
+    margin-left: 220px;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Orbitron', sans-serif;
     background-color: #000;
     color: #fff;
     line-height: 1.6;
 }
-
 .contenedor {
     width: 90%;
     max-width: 1200px;
     margin: auto;
     padding: 40px 0;
 }
-
 header {
     text-align: center;
     padding: 20px;
     border-bottom: 1px solid #333;
 }
 header h1 {
-    letter-spacing: 3px;
+    letter-spacing: 6px;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-    border-bottom: 1px solid #333;
+.sidebar {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    width: 220px;
+    height: 100vh;
     background: #000;
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
     z-index: 1000;
 }
-
-nav img {
-    width: 60px;
+.sidebar .logo img {
+    width: 80px;
     border-radius: 50%;
+    margin-bottom: 40px;
 }
-
-nav ul {
-    display: flex;
+.sidebar ul {
     list-style: none;
-    gap: 20px;
+    width: 100%;
 }
-
-nav a {
-    position: relative;
-    padding: 8px 12px;
-    color: #fff;
+.sidebar li {
+    margin: 15px 0;
+    text-align: center;
+}
+.sidebar a {
     text-decoration: none;
-    transition: 0.3s;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 5px;
+    display: inline-block;
 }
-
-nav a::after {
+.sidebar a::after {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -3px;
     width: 0%;
     height: 1px;
     background: #fff;
     transition: 0.3s;
     transform: translateX(-50%);
 }
-
-nav a:hover::after {
+.sidebar a:hover::after {
     width: 100%;
 }
-
 section h1 {
     text-align: center;
     margin-bottom: 10px;
 }
-
 section p {
     text-align: center;
     margin-bottom: 20px;
     color: #ccc;
 }
-
 .tatuador {
     text-align: center;
     margin: 20px 0;
 }
-
 .tatuador img {
     width: 200px;
     border-radius: 50%;
     border: 2px solid #fff;
 }
-
 .carrusel {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
-
 .carrusel img {
     width: 180px;
     height: 180px;
@@ -111,18 +113,15 @@ section p {
     border: 1px solid #333;
     transition: 0.3s;
 }
-
 .carrusel img:hover {
     transform: scale(1.05);
     border-color: #fff;
 }
-
 details {
     width: 100%;
     text-align: center;
     margin-top: 20px;
 }
-
 summary {
     cursor: pointer;
     padding: 10px;
@@ -133,13 +132,11 @@ form {
     max-width: 600px;
     margin: auto;
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
 label {
     margin-top: 10px;
 }
@@ -154,11 +151,9 @@ input, textarea {
     color: #fff;
     outline: none;
 }
-
 input:focus, textarea:focus {
     border-color: #fff;
 }
-
 .btn {
     margin-top: 20px;
     padding: 12px;
@@ -168,38 +163,31 @@ input:focus, textarea:focus {
     color: #000;
     transition: 0.3s;
 }
-
 .btn:hover {
     background: #ccc;
 }
-
 .contact-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
 }
-
 .contact-info {
     flex: 1;
 }
-
 .contact-form {
     flex: 1;
 }
-
 .footer {
     background: #000;
     color: #fff;
     padding-top: 60px;
 }
-
 .footer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
-
 .footer h2 {
     font-size: 20px;
     letter-spacing: 2px;
@@ -211,13 +199,11 @@ input:focus, textarea:focus {
     letter-spacing: 1px;
     color: #aaa;
 }
-
 .footer p {
     color: #ccc;
     font-size: 14px;
     line-height: 1.6;
 }
-
 .footer a {
     color: #fff;
     text-decoration: none;
@@ -237,46 +223,48 @@ input:focus, textarea:focus {
     background: #fff;
     transition: 0.3s;
 }
-
 .footer a:hover::after {
     width: 100%;
 }
-
 .social-icons {
     display: flex;
     flex-direction: column;
 }
-
 .footer-line {
     width: 100%;
     height: 1px;
     background: linear-gradient(to right, transparent, #444, transparent);
     margin: 40px 0 20px;
 }
-
 .footer-bottom {
     text-align: center;
     padding-bottom: 20px;
     font-size: 13px;
     color: #777;
 }
-
-
 .insta {
     width: 350px;
     margin-top: 10px;
     border-radius: 20px;
 }
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
+    .sidebar ul {
+        display: flex;
+        gap: 15px;
+    }
+    main, header {
+        margin-left: 0;
+    }
     .contact-container {
         flex-direction: column;
     }
-
     .carrusel img {
         width: 100%;
         max-width: 300px;
