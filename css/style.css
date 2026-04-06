@@ -13,7 +13,7 @@ header {
     margin-left: 220px;
 }
 body {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     background-color: #000;
     color: #fff;
     line-height: 1.6;
@@ -32,6 +32,42 @@ header {
 header h1 {
     letter-spacing: 6px;
 }
+#inicio .contenedor {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  gap: 40px; 
+  flex-wrap: wrap; 
+}
+#inicio .contenedor p {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+}
+#inicio .contenedor h1 {
+  width: 100%;
+}
+#inicio .contenedor hr {
+  width: 100%;
+  margin: 10px 0 20px;
+}
+#inicio .video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+#inicio .video video {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  max-height: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .sidebar {
     position: fixed;
     top: 0;
@@ -44,7 +80,6 @@ header h1 {
     flex-direction: column;
     align-items: center;
     padding: 30px 20px;
-    z-index: 1000;
 }
 .sidebar .logo img {
     width: 80px;
@@ -100,20 +135,20 @@ section p {
     border-radius: 50%;
     border: 2px solid #fff;
 }
-.carrusel {
+.galeria {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
-.carrusel img {
+.galeria img {
     width: 180px;
     height: 180px;
     object-fit: cover;
     border: 1px solid #333;
     transition: 0.3s;
 }
-.carrusel img:hover {
+.galeria img:hover {
     transform: scale(1.05);
     border-color: #fff;
 }
@@ -127,6 +162,12 @@ summary {
     padding: 10px;
     border: 1px solid #fff;
     display: inline-block;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+summary:hover {
+    background: #fff;
+    color: #000;
 }
 form {
     max-width: 600px;
@@ -164,13 +205,20 @@ input:focus, textarea:focus {
     transition: 0.3s;
 }
 .btn:hover {
-    background: #ccc;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
 }
 .contact-container {
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-between;
+}
+.contact-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 .contact-info {
     flex: 1;
@@ -265,7 +313,7 @@ input:focus, textarea:focus {
     .contact-container {
         flex-direction: column;
     }
-    .carrusel img {
+    .galeria img {
         width: 100%;
         max-width: 300px;
     }
