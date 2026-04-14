@@ -17,3 +17,11 @@ mobileLinks.forEach((link) => {
     document.body.style.overflow = "";
   });
 });
+
+const detailsEl = document.querySelector("details");
+const summaryEl = detailsEl.querySelector("summary");
+detailsEl.addEventListener("toggle", () => {
+  summaryEl.textContent = detailsEl.open
+    ? "Ver menos diseños"
+    : "Ver más diseños";
+});
